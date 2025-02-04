@@ -12,6 +12,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #50859F;
     position: relative;
+}
+
+*{
+    font-family: Jura;
     color: white;
 }
 
@@ -38,10 +42,6 @@ body {
     color: black;
 }
 
-.content {
-    padding: 50px 0;
-}
-
 .screen {
     height: 100vh;
     display: flex;
@@ -64,15 +64,18 @@ body {
     z-index: 2;
     border-radius: 200px;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, #96172C 0%, #96172C 50%, #FFFF 100%);
-    height: 200vh;
+    background: linear-gradient(180deg, #96172C 51.6%, #FFFFFF 95.89%);
+    height: 2500px;
     position: relative;
     margin-top: -20vh;
     flex-direction: column;
 }
 
-#about h1{
+h1, h2, h3, th {
     font-family: Kelly Slab;
+}
+
+#about h1{
 font-size: 35px;
 font-weight: 400;
 line-height: 42.42px;
@@ -115,7 +118,6 @@ text-decoration-skip-ink: none;
 
 footer{
     height: 45vh;
-    font-family: Jura;
 }
 
 table{
@@ -129,7 +131,6 @@ th{
     font-size: 25px;
     padding-right: 160px;
     padding-bottom: 34px;
-    font-family: Kelly Slab;
     font-weight: 400;
     line-height: 30.3px;
     text-underline-position: from-font;
@@ -175,5 +176,121 @@ div.icons{
 }
 div.icons img{
     padding-right: 24px;
+}
+
+#question{
+    background-image: url("../images/about/question.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.blur{
+    background: #86868666;
+    backdrop-filter: blur(40px);
+}
+
+#question div.screen {
+    height: 100%;
+    width: 50%;
+}
+
+#question h1{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul { 
+    list-style-type: none; 
+    padding: 0;
+    margin-bottom: 100px; 
+    display: flex;
+    align-items: flex-end;
+ } 
+li { 
+    background-color: #f9f9f9;   
+    width: 400px;
+    height: 344px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+.central-card > div:first-child , .card > div:first-child{
+    height: 344px;
+}
+
+li.central-card{
+    height: 785px;
+}
+
+li:first-child, li:nth-child(2){
+    margin-right: 106px;
+}
+
+#card1{
+    background-image: url("../images/cards/ten_island.png");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+#card2{
+    background-image: url("../images/cards/stokgolm_metro.png");
+}
+
+#card3{
+    background-image: url("../images/cards/carlson.png");
+}
+
+h3 { 
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.36px;
+    text-align: left;
+    text-decoration-line: underline;
+    margin-left: 10px;
+ } 
+p { 
+font-size: 20px;
+font-weight: 400;
+line-height: 23.66px;
+text-align: left;
+margin-left: 10px;
+ } 
+
+.card, .central-card{
+    background-color: #555;
+    height: 669px;
+    width: 455px;
+}
+
+#cost{
+    margin-left: 25px;
+    width: 128px;
+    height: 83px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-left: 22px;
+    border-width: 4px, 4px, 4px, 4px;
+    border-style: solid;
+    border-color: #AC7677;
+    font-family: Kelly Slab;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
