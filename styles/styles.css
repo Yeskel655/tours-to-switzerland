@@ -78,11 +78,7 @@ h1, h2, h3, th {
 #about h1{
 font-size: 35px;
 font-weight: 400;
-line-height: 42.42px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+text-decoration: underline;
 }
 
 #contact {
@@ -132,28 +128,16 @@ th{
     padding-right: 160px;
     padding-bottom: 34px;
     font-weight: 400;
-    line-height: 30.3px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 td {
     padding-bottom: 10px;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 23.66px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 #rules{
     margin-top: 140px;
     font-size: 18px;
-    font-weight: 300;
-    line-height: 21.29px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     padding: 0;
 }
 
@@ -292,5 +276,9 @@ margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.central-card > #cost {
+    margin-bottom: 195px;
 }
 
