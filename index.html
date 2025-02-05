@@ -91,14 +91,72 @@
             </ul>
         </div>
     </div>
-    
         <div id="booking">
-            <nav>Иконки</nav>
+            <nav>
+                <img src="./images/booking/icons/hotel_default.svg">
+                <img src="./images/booking/icons/plane_default.svg">
+                <img src="./images/booking/icons/bus_default.svg">
+                <img src="./images/booking/icons/train_default.svg">
+                <img src="./images/booking/icons/car_default.svg">
+            </nav>
+            <h2>Перелёт + Отель</h2>
+            <form action="" method="post">
+                <p>
+                    <label for="from">Откуда</label> <br>
+                    <input type="text" id="from" name="from" required>
+                </p>
+                <p>
+                    <label for="data-from">Отправление</label> <br>
+                    <input type="date" id="data-from" name="data-from">
+                </p>
+                <p>
+                    <label for="data-to">Отправление</label> <br>
+                    <input type="date" id="data-to" name="data-to">
+                </p>
+                <p>
+                    <label for="money">Бюджет</label> <br>
+                    <select name="money" id="money" size="1">
+                        <option value="cheap">Дешёвый</option>
+                        <option value="middle">Средний</option>
+                        <option value="exspensive">Дорогой</option>
+                    </select>
+                </p>
+                <p><input type="submit" value="Бронь тура"></p>
+                <p>
+                    <label for="to">Куда</label> <br>
+                    <input type="text" id="to" name="to" required>
+                </p>
+                <p>
+                    <label for="adult">Взрослые</label> <br>
+                    <select name="adult" id="adult" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value=">3">3 и более</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="child">Взрослые</label> <br>
+                    <select name="child" id="child" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value=">3">3 и более</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="hotel-level">Уровень отеля</label> <br>
+                    <select name="hotel-level" id="hotel-level" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+            </form>
         </div>
     
         <div id="contact" class="screen">
             <h1>Свяжитесь с нами</h1>
-            <p>Вы можете связаться с нами по телефону или электронной почте.</p>
         </div>
     </main>
     <footer>

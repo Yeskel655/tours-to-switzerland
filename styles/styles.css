@@ -316,6 +316,20 @@ margin-left: 10px;
     margin: 90px 0px 100px auto;
     width: 734px;
  }
+ nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 41px;
+    box-sizing: border-box;
+ }
+
+ nav > img {
+    margin: 35px 53px 32px 0px;
+ }
+
+ #booking {
+    color: #96172C;
+ }
 
 
 
