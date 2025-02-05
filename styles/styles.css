@@ -47,7 +47,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
 }
 
 #home {
@@ -69,6 +68,11 @@ body {
     position: relative;
     margin-top: -20vh;
     flex-direction: column;
+    overflow: hidden;
+}
+
+#about > div{
+    width: 100%;
 }
 
 h1, h2, h3, th {
@@ -78,8 +82,14 @@ h1, h2, h3, th {
 #about h1{
 font-size: 35px;
 font-weight: 400;
-width: 100%;
-text-decoration: underline;
+border-bottom: 5px solid white;
+margin-top: 90px;
+margin-bottom: 63px;
+}
+
+#offers h1{
+    text-align: right;
+    width: 734px;
 }
 
 #contact {
@@ -169,13 +179,16 @@ div.icons img{
     background-position: right;
     background-repeat: no-repeat;
     height: 700px;
-    width: 100%;
     justify-content: flex-start;
 }
 
 .blur{
     background: #86868666;
     backdrop-filter: blur(40px);
+}
+
+.card > div.blur, .central-card > div.blur {
+   border-radius: 0px 0px 20px 20px; 
 }
 
 #question div.screen {
@@ -192,6 +205,7 @@ div.icons img{
     line-height: 80px;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: none;
 }
 
 ul { 
@@ -200,15 +214,16 @@ ul {
     margin-bottom: 100px; 
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    margin: 0px 177px 100px 177px;
  } 
 li.card, li.central-card { 
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
-    overflow: hidden;
-    background-color: #555;
     height: 669px;
     width: 455px;
+    overflow: hidden;
 }
 
 .central-card > div:first-child , .card > div:first-child{
@@ -217,10 +232,6 @@ li.card, li.central-card {
 
 li.central-card{
     height: 785px;
-}
-
-li:first-child, li:nth-child(2){
-    margin-right: 106px;
 }
 
 #card1{
@@ -275,7 +286,36 @@ font-weight: 400;
 line-height: 23.66px;
 text-align: left;
 margin-left: 10px;
- } 
+ }
+
+ #adventages > ul {
+    margin: 0px 187px 0px 187px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 146px;
+ }
+
+ li.adventage {
+    width: 334px;
+ }
+
+ li.adventage>div, li.adventage h3, li.adventage p{
+    text-align: center;
+ }
+ 
+ li.adventage h3{
+    color:#96172C
+ }
+ li.adventage p{
+    color: black
+ }
+
+ #adventages > h1 {
+    display: flex;
+    text-align: left;
+    margin: 90px 0px 100px auto;
+    width: 734px;
+ }
 
 
 
