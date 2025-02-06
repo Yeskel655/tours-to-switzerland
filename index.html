@@ -93,65 +93,69 @@
     </div>
         <div id="booking">
             <nav>
-                <img src="./images/booking/icons/hotel_default.svg">
-                <img src="./images/booking/icons/plane_default.svg">
-                <img src="./images/booking/icons/bus_default.svg">
-                <img src="./images/booking/icons/train_default.svg">
-                <img src="./images/booking/icons/car_default.svg">
+                <div id="hotel"></div>
+                <div id="plane"></div>
+                <div id="bus"></div>
+                <div id="train"></div>
+                <div id="car"></div>
             </nav>
             <h2>Перелёт + Отель</h2>
             <form action="" method="post">
-                <p>
-                    <label for="from">Откуда</label> <br>
-                    <input type="text" id="from" name="from" required>
-                </p>
-                <p>
-                    <label for="data-from">Отправление</label> <br>
-                    <input type="date" id="data-from" name="data-from">
-                </p>
-                <p>
-                    <label for="data-to">Отправление</label> <br>
-                    <input type="date" id="data-to" name="data-to">
-                </p>
-                <p>
-                    <label for="money">Бюджет</label> <br>
-                    <select name="money" id="money" size="1">
-                        <option value="cheap">Дешёвый</option>
-                        <option value="middle">Средний</option>
-                        <option value="exspensive">Дорогой</option>
-                    </select>
-                </p>
-                <p><input type="submit" value="Бронь тура"></p>
-                <p>
-                    <label for="to">Куда</label> <br>
-                    <input type="text" id="to" name="to" required>
-                </p>
-                <p>
-                    <label for="adult">Взрослые</label> <br>
-                    <select name="adult" id="adult" size="1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value=">3">3 и более</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="child">Взрослые</label> <br>
-                    <select name="child" id="child" size="1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value=">3">3 и более</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="hotel-level">Уровень отеля</label> <br>
-                    <select name="hotel-level" id="hotel-level" size="1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </p>
+                <div>
+                    <p>
+                        <label for="from">Откуда</label>
+                        <input type="text" id="from" name="from" placeholder="Начните вводить" required>
+                    </p>
+                    <p>
+                        <label for="data-from">Отправление</label>
+                        <input type="date" id="data-from" name="data-from" placeholder="Дата">
+                    </p>
+                    <p>
+                        <label for="data-to">Прибытие</label>
+                        <input type="date" id="data-to" name="data-to" placeholder="Дата">
+                    </p>
+                    <p>
+                        <label for="money">Бюджет</label>
+                        <select name="money" id="money" size="1">
+                            <option value="cheap">Дешёвый</option>
+                            <option value="middle">Средний</option>
+                            <option value="exspensive">Дорогой</option>
+                        </select>
+                    </p>
+                    <p><input type="submit" value="Бронь тура"></p>
+                </div>
+                <div>
+                    <p>
+                        <label for="to">Куда</label>
+                        <input type="text" id="to" name="to" placeholder="Начните вводить" required>
+                    </p>
+                    <p>
+                        <label for="adult">Взрослые</label>
+                        <select name="adult" id="adult" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value=">3">3 и более</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="child">Дети</label>
+                        <select name="child" id="child" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value=">3">3 и более</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="hotel-level">Уровень отеля</label>
+                        <select name="hotel-level" id="hotel-level" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                </div>
             </form>
         </div>
     
