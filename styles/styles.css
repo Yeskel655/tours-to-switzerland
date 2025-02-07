@@ -25,34 +25,21 @@ body {
     color: white;
 }
 
-.nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 10;
-    display: none;
-}
-
-.nav-bar a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav-bar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 .screen {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    width: 100%;
 }
 
 #home {
@@ -96,7 +83,6 @@ th {
     font-size: 35px;
     font-weight: 400;
     border-bottom: 5px solid white;
-    margin-top: 90px;
     margin-bottom: 63px;
 }
 
@@ -117,6 +103,7 @@ th {
     margin-top: -7vh;
     height: 110vh;
     overflow: hidden;
+    padding-top: 124px;
 }
 
 #booking {
@@ -136,10 +123,6 @@ th {
     height: 117px;
     width: 100%;
     border-radius: 50px 50px 0px 0px;
-}
-
-footer {
-    height: 45vh;
 }
 
 table {
@@ -164,27 +147,15 @@ td {
 #rules {
     margin-top: 140px;
     font-size: 18px;
-    text-align: center;
     padding: 0;
+    margin: 140px 208px 93px 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#polises,
-div.icons {
-    margin-top: -40px;
-}
-
-footer #logo {
-    position: absolute;
-    left: 1650px;
-}
-
-#polises {
+#polises{
     text-align: right;
-    margin-right: 212px;
-}
-
-div.icons {
-    margin-left: 208px;
 }
 
 div.icons img {
@@ -529,28 +500,36 @@ form div {
 
 #contact {
     flex-direction: column;
+    box-sizing: border-box;
+    padding-top:  400px;
 }
 
 #contact h1 {
     color: #96172C;
     border-bottom: 5px solid #96172C;
+    margin: 0;
+    margin-bottom: 260px;
 }
 
 #contact h2 {
+    margin: 0;
     font-size: 48px;
     font-weight: 400;
+    margin-bottom: 12px;
 }
 
 #contact button {
     background-color: #F5F5F5;
     width: 227px;
     height: 67px;
+    margin-bottom: 12px;
 }
 
 .circle {
     width: 650px;
     height: 650px;
-    margin-left: 119px;
+    margin: 0;
+    margin-left: 70px;
     background-color: #96172C;
     border-radius: 50%;
     box-sizing: border-box;
@@ -564,18 +543,22 @@ form div {
 }
 
 .circle p {
+    position: relative;
     font-size: 35px;
     font-weight: 400;
-    margin-bottom: 5px;
+    bottom: 100px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .circle p:last-child {
     font-size: 30px;
     color: #FFFFFFB8;
+    margin: 0;
 }
 
 .plus{
-    position: absolute;
+    position: relative;
     width: 30px;
     height: 30px;
     background-color: #96172C;
@@ -587,26 +570,41 @@ form div {
 }
 
 #plus-1{
-    top: calc(449px + 415px);
-    left: 0px;
+    top: 100px;
+    right: 320px;
 }
 #plus-2{
-    top: 173px;
-    left: 25px;
+    bottom: 50px;
+    right: 300px;
 }
 #plus-3{
-    top: 173px;
-    left: 25px;
+    bottom: 200px;
+    right: 210px;
 }
 #plus-4{
-    top: 173px;
-    left: 25px;
+    bottom: 180px;
+    left: 260px;
 }
 #plus-5{
-    top: 173px;
-    left: 25px;
+    bottom: 90px;
+    left: 315px;
 }
 #plus-6{
-    top: 173px;
-    left: 25px;
+    top: 15px;
+    left: 320px;
+}
+
+table #logo {
+    align-content: end;
+}
+
+footer #logo {
+    position: right;
+}
+
+#footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 212px;
 }
