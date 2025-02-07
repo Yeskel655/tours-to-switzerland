@@ -39,12 +39,21 @@ body > header {
     position: absolute;
     z-index: 3;
     background-color: transparent;
-    width: 100%;
+    margin: 76px 220px 50px 220px;
+}
+
+.nav-bar{
+    margin-left: 287.46px;
+    margin-right: 208.92px;
+    white-space: nowrap;
+}
+
+.nav-bar a{
+    margin-right: 60px;
 }
 
 #home {
     background-image: url('../images/home/backround.png');
-    /* Укажите путь к изображению */
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
@@ -156,6 +165,11 @@ td {
 
 #polises{
     text-align: right;
+}
+
+div.icons{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 div.icons img {
@@ -319,6 +333,11 @@ nav {
     flex-direction: row;
     padding-left: 41px;
     box-sizing: border-box;
+}
+
+nav a {
+    color: #96172C;
+    text-decoration: none;
 }
 
 nav div {
@@ -607,4 +626,11 @@ footer #logo {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 212px;
+}
+
+#home div:first-child{
+    width: 638px;
+    height: 700px;
+    background: #D9D9D999;
+    backdrop-filter: blur(70px)
 }
