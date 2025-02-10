@@ -96,6 +96,10 @@ th {
     margin-bottom: 63px;
 }
 
+#about h1{
+    margin-top: 90px;
+}
+
 #offers h1,
 #contact h1 {
     text-align: right;
@@ -458,6 +462,7 @@ input[type=submit],
     color: #96172C;
     border: 1px solid #96172C;
     padding: 0;
+    flex-shrink: 0;
 }
 
 input[type=submit]:hover, #home button:hover{
@@ -542,6 +547,14 @@ form div {
 
 #contact button {
     background-color: #F5F5F5;
+    width: 227px;
+    height: 67px;
+    margin-bottom: 12px;
+}
+
+#contact button:hover {
+    background: linear-gradient(180deg, rgba(150, 23, 44, 0.9) 0%, #E9F0F3 100%);
+    color: black;
     width: 227px;
     height: 67px;
     margin-bottom: 12px;
@@ -634,12 +647,13 @@ footer #logo {
 #home div:first-child{
     width: 638px;
     height: 700px;
-    background: #D9D9D999;
-    backdrop-filter: blur(70px);
     padding: 125px 65px 146px 65px;
     box-sizing: border-box;
     margin-left: 180px;
+    background-image: url('../images/home/blur.svg');
+    background-size: contain;
 }
+
 .red{
     color: #96172C;
 }
@@ -658,10 +672,10 @@ footer #logo {
     text-align: left;
     color: #F5F5F5;
     border-bottom: 5px solid white;
-    margin: 0px 0px 16px 473px;
+    margin: 300px 0px 16px 473px;
 }
 
-#home img {
+#home li img {
     margin-top: 12px;
     width: 230px;
     height: 230px;
@@ -672,6 +686,8 @@ footer #logo {
 #home ul {
     margin: 0;
     padding: 0;
+    background-image: url('../images/home/gradient-blur.svg');
+    background-size: contain;
 }
 #home li {
     display: flex;
@@ -681,4 +697,21 @@ footer #logo {
     margin-right: 66px;
     font-weight: 700;
     font-size: 20px;
+}
+
+#left-arrow, #right-arrow{
+    width: 30px;
+    height: 30px;
+    margin-top: 14px;
+}
+
+#right-arrow{
+    transform: rotate(180deg);
+    margin-left: 81px;
+}
+
+#arrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
