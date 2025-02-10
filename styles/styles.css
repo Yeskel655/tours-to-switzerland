@@ -715,3 +715,52 @@ footer #logo {
     align-items: center;
     justify-content: center;
 }
+
+ol li {
+    position: absolute;
+    background-color: #96172C;
+    width: 348px;
+    height: 124px;
+}
+
+ol li h3 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 31px;
+    margin-left: 17px;
+    margin-bottom: 8px;
+}
+
+ol li p {
+    margin-left: 35px;
+}
+
+ol li:first-child {
+    top: 350px;
+    left: 100px;
+}
+
+ol li:nth-child(2) {
+    top: 450px;
+    left: 250px;
+}
+ol li:nth-child(3) {
+    top: 550px;
+    left: 400px;
+}
+ol li:nth-child(4) {
+    top: 635px;
+    left: 700px;
+}
+ol li:nth-child(5) {
+    top: 800px;
+    left: 800px;
+}
+ol li:last-child {
+    top: 950px;
+    left: 800px;
+}
+.plus-li{
+    display: none;
+}
